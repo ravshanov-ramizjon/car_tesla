@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.car-section,
+.interior-section {
+    background-color: white;
+}
+
+.car-image,
+.interior-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info {
+    
+    margin-top: 20px;
+}
+
+.rangee {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.range,
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.range,
+.price,
+.parameters,
+.colors,
+.toggles {
+    margin-bottom: 30px;
+}
+
+.range span,
+.price span,
+.parameters span,
+.colors span {
+    display: block;
+    font-size: 20px;
+    color: #888;
+}
+
+.range h2,
+.price h2 {
+    font-size: 35px;
+    color: #000;
+}
+
+.parameters {
+    display: none;
+    justify-content: center;
+    gap: 70px;
+}
+
+.parameter {
+
+    font-size: 26px;
+    color: #333;
+}
+
+.parameter .upDown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    button,
+    img {
+        border: none;
+        width: 17px;
+    }
+}
+
+.param {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.toggles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    gap: 50px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.color-options {
+    display: flex;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+}
+
+.color.black {
+    background-color: black;
+}
+
+.color.white {
+    background-color: white;
+}
+
+.color.beige {
+    background-color: #f5dcdc;
+}
+
+.color:hover {
+    border: 1px solid black;
+}
+
+.interior-thumbnails img {
+    width: 48%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.interior-thumbnails img:not(:last-child) {
+    margin-right: 4%;
+}

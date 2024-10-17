@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Configurator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="car-section">
+            <img src="./img/image_car.png" alt="Car Image" class="car-image">
+            <div class="info">
+                <div class="rangee">
+                    <div class="range">
+                        <span>Запас хода</span>
+                        <div class="param">
+                            <h2>750</h2>
+                            <span style="font-size: 35px; color: #000;">км</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>Цена</span>
+                        <div class="param">
+                            <span style="font-size: 35px; color: #000;">$</span>
+                            <h2>89,990</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parameters">
+                    <div class="parameter" id="speed">
+                        <span>Скорость движения</span>
+                        <div class="param">
+                            <p class="p_km">60</p>
+                            <span>км/ч</span>
+                            <div class="parameter">
+                                <div class="upDown" style="margin-left: 120px;">
+                                    <button class="up"><img src="./img/imageUp.png" alt=""></button>
+                                    <button class="down"><img src="./img/imageDown.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parameter" id="temperature">
+                        <span>Температура окружающей среды</span>
+                        <div class="param">
+                            <p class="p_gr">20</p>
+                            <span>°</span>
+                            <div class="parameter">
+                                <div class="upDown" style="margin-left: 290px;">
+                                    <button class="up"><img src="./img/imageUp.png" alt=""></button>
+                                    <button class="down"><img src="./img/imageDown.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parameter" id="wheels">
+                        <span>Диски</span>
+                        <div class="param">
+                            <p class="p_wid">19</p>
+                            <div class="parameter">
+                                <div class="upDown" style="margin-left: 30px;">
+                                    <button class="up"><img src="./img/imageUp.png" alt=""></button>
+                                    <button class="down"><img src="./img/imageDown.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="toggles">
+                        <div class="toggle-item">
+                            <span id="climateControlLabel">Климат-контроль</span>
+                            <label class="switch">
+                                <input type="checkbox" id="climateControl">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="toggle-item">
+                            <span id="airConditionerLabel">Кондиционер</span>
+                            <label class="switch">
+                                <input type="checkbox" id="airConditioner">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="toggle-item">
+                            <span id="longRangeLabel">Версия Long Range</span>
+                            <label class="switch">
+                                <input type="checkbox" id="longRange">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toggle-item" style="display: flex; margin: 20px; justify-content: center; gap: 5px;">
+                    <span id="carTypeLabel">Вид автомобиля</span>
+                    <label class="switch">
+                        <input type="checkbox" id="carType">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="interior-section">
+                    <img src="./img/imageBlack.png" alt="Interior Image" class="interior-image">
+                    <div class="info">
+                        <div class="range">
+                            <span>Запас хода</span>
+                            <div class="param">
+                                <h2 id="speed">750</h2>
+                                <span style="font-size: 35px; color: #000;">км</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>Цена</span>
+                            <div class="param">
+                                <span style="font-size: 35px; color: #000;">$</span>
+                                <h2 id="price">89,990</h2>
+                            </div>
+                        </div>
+                        <div class="colors">
+                            <span>Выбор цвета:</span>
+                            <div class="color-options">
+                                <div class="color black"></div>
+                                <div class="color white"></div>
+                                <div class="color beige"></div>
+                            </div>
+                        </div>
+                        <div class="toggles">
+                            <span>Автопилот</span>
+                            <label class="switch">
+                                <input type="checkbox" id="autopilot">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
